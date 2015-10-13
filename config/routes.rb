@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'user/show' => 'user#show'
   get 'user/add' => 'user#add'
+  post 'user/form' => 'user#form'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

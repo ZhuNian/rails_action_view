@@ -8,4 +8,8 @@ class UserController < ApplicationController
   def add
     @users = User.find_by(id:1)
   end
+
+  def form
+    render partial: 'form', locals:{email_text:params[:email_text]}
+  end
 end
