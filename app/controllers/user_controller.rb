@@ -4,4 +4,8 @@ class UserController < ApplicationController
 
     # render 'add'
   end
+
+  def add
+    @users = User.find_by(id:1)
+  end
 end
