@@ -1,14 +1,7 @@
 class UserController < ApplicationController
   def show
-    # 渲染页面
-    # render 'show'
-    # render action: 'show'
-    # render template: 'user/show'
+    redirect_to user_add_url
 
-    # render nothing: true
-
-    # 渲染文本/JSON
-    # render plain: "OK"
-    # render json: {status:'OK'}
+    # render 'add'
   end
 end
